@@ -1,0 +1,31 @@
+
+
+<body>
+  <div class="logo-container">
+    <img src="./assets/capacash-logo.png" alt="CapaCash Logo">
+    <div class="h2_header">
+      <p>Login to your Account</p>
+    </div>
+  </div>
+
+  <div class="login-container">
+    <div class="login-content">
+      <p class="tip">Tip: Do not share your password to anyone.</p>
+      <div class="inputField">
+        <ion-item>
+          <ion-input label="Email/EMP ID:" labelPlacement="stacked" placeholder="Enter Email or Employee ID"></ion-input>
+        </ion-item>
+      </div>
+
+      <div class="inputField">
+        <ion-item>
+          <ion-input type="password" label="Password:" labelPlacement="stacked" placeholder="Enter Password"></ion-input>
+        </ion-item>
+      </div>
+
+      <a (click)="forgetPW()"><p class="forgot-password">Forgot Password?</p></a>  
+
+      <div class="login-btn"><button class="loginBtn" shape="round" (click)="LogInFunc()">Login</button></div>
+    </div>
+  </div>
+</body>

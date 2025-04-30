@@ -1,0 +1,441 @@
+body{
+    background-color: #ffffff;
+}
+
+.imgContainer{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.roundHdr{
+    background-color: #fdcd48bd;
+    width: 100%;
+    height: 200px;
+    border-radius: 0 0 150px 150px;
+}
+
+.logo-container{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.logo-container img{
+    width: auto;
+}
+
+ion-toolbar{
+    --background: #ffffff00;
+}
+
+ion-menu-button{
+    --color: white;
+}
+
+ion-card{
+    border-radius: 20px;
+}
+
+hr {
+    border:none;
+    height: 50px;
+    width: 90%;
+    height: 50px;
+    margin-top: 0;
+    border-bottom: 1px solid #1f1209;
+    box-shadow: 0 15px 20px -20px #333;
+    margin: -50px auto 10px; 
+  }
+  
+.cardContainer{
+    position: absolute;
+    z-index: 1;
+    top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.cardContent{
+    padding: 20px;
+}
+
+.card{
+    width: 100%;
+    max-width: 500px;
+}
+
+.employeeGreet{
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.balanceLbl{
+    font-weight: bold;
+    font-size: 1.7em;
+    color: var(--ion-color-secondary);
+}
+.balanceDP{
+    font-size: 1.5em;
+    color: var(--ion-color-secondary);
+}
+
+//menu header:
+.HdrContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menuHdr{
+    padding: 30px 0 10px 0;
+    background-color: #fdcd48bd;
+    border-radius: 0 0 20px 20px;
+}
+
+.custom-menu-hdr{
+    --background: #fdcd48bd;
+}
+
+.contentLbl{
+    padding: 0 0 0 10px;
+}
+
+.custom-tab-bar {
+    position: relative;
+    background: white;
+    border-top: 1px solid #ccc;
+}
+
+.fab-container {
+    position: absolute;
+    bottom: 20px;  /* Adjust for proper alignment */
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.notification-badge {
+    position: absolute;
+    background: red;
+    top: 3px;
+    right: 40px;
+    color: white;
+    border-radius: 50%;
+    padding: 3px 6px;
+    font-size: 10px;
+}
+
+.logoutBtn{
+    color: red;
+    width: 32px;
+    height: 32px;
+}
+
+.menuFtr{
+    padding: 20px
+}
+body{
+    background-color: #ffffff;
+}
+
+.imgContainer{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.roundHdr{
+    background-color: #fdcd48bd;
+    width: 100%;
+    height: 200px;
+    border-radius: 0 0 150px 150px;
+}
+
+.logo-container{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.logo-container img{
+    width: auto;
+}
+
+ion-toolbar{
+    --background: #ffffff00;
+}
+
+ion-menu-button{
+    --color: white;
+}
+
+ion-card{
+    border-radius: 20px;
+}
+
+hr {
+    border:none;
+    height: 50px;
+    width: 90%;
+    height: 50px;
+    margin-top: 0;
+    border-bottom: 1px solid #1f1209;
+    box-shadow: 0 15px 20px -20px #333;
+    margin: -50px auto 10px; 
+  }
+  
+.cardContainer{
+    position: absolute;
+    z-index: 1;
+    top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.cardContent{
+    padding: 20px;
+}
+
+.card{
+    width: 100%;
+    max-width: 500px;
+}
+
+.employeeGreet{
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.balanceLbl{
+    font-weight: bold;
+    font-size: 1.7em;
+    color: var(--ion-color-secondary);
+}
+.balanceDP{
+    font-size: 1.5em;
+    color: var(--ion-color-secondary);
+}
+
+//menu header:
+.HdrContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menuHdr{
+    padding: 30px 0 10px 0;
+    background-color: #fdcd48bd;
+    border-radius: 0 0 20px 20px;
+}
+
+.custom-menu-hdr{
+    --background: #fdcd48bd;
+}
+
+.contentLbl{
+    padding: 0 0 0 10px;
+}
+
+.custom-tab-bar {
+    position: relative;
+    background: white;
+    border-top: 1px solid #ccc;
+}
+
+.fab-container {
+    position: absolute;
+    bottom: 20px;  /* Adjust for proper alignment */
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.notification-badge {
+    position: absolute;
+    background: red;
+    top: 3px;
+    right: 40px;
+    color: white;
+    border-radius: 50%;
+    padding: 3px 6px;
+    font-size: 10px;
+}
+
+.logoutBtn{
+    color: red;
+    width: 32px;
+    height: 32px;
+}
+
+.menuFtr{
+    padding: 20px
+}
+body{
+    background-color: #ffffff;
+}
+
+.imgContainer{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.roundHdr{
+    background-color: #fdcd48bd;
+    width: 100%;
+    height: 200px;
+    border-radius: 0 0 150px 150px;
+}
+
+.logo-container{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.logo-container img{
+    width: auto;
+}
+
+ion-toolbar{
+    --background: #ffffff00;
+}
+
+ion-menu-button{
+    --color: white;
+}
+
+ion-card{
+    border-radius: 20px;
+}
+
+hr {
+    border:none;
+    height: 50px;
+    width: 90%;
+    height: 50px;
+    margin-top: 0;
+    border-bottom: 1px solid #1f1209;
+    box-shadow: 0 15px 20px -20px #333;
+    margin: -50px auto 10px; 
+  }
+  
+.cardContainer{
+    position: absolute;
+    z-index: 1;
+    top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.cardContent{
+    padding: 20px;
+}
+
+.card{
+    width: 100%;
+    max-width: 500px;
+}
+
+.employeeGreet{
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.balanceLbl{
+    font-weight: bold;
+    font-size: 1.7em;
+    color: var(--ion-color-secondary);
+}
+.balanceDP{
+    font-size: 1.5em;
+    color: var(--ion-color-secondary);
+}
+
+//menu header:
+.HdrContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menuHdr{
+    padding: 30px 0 10px 0;
+    background-color: #fdcd48bd;
+    border-radius: 0 0 20px 20px;
+}
+
+.custom-menu-hdr{
+    --background: #fdcd48bd;
+}
+
+.contentLbl{
+    padding: 0 0 0 10px;
+}
+
+.custom-tab-bar {
+    position: relative;
+    background: white;
+    border-top: 1px solid #ccc;
+}
+
+.fab-container {
+    position: absolute;
+    bottom: 20px;  /* Adjust for proper alignment */
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.notification-badge {
+    position: absolute;
+    background: red;
+    top: 3px;
+    right: 40px;
+    color: white;
+    border-radius: 50%;
+    padding: 3px 6px;
+    font-size: 10px;
+}
+
+.logoutBtn{
+    color: red;
+    width: 32px;
+    height: 32px;
+}
+
+.menuFtr{
+    padding: 20px
+}

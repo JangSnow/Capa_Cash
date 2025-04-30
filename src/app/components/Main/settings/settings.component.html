@@ -1,0 +1,46 @@
+<ion-app>
+  <div class="mainContentContainer">
+    <div class="roundHdr">
+      <ion-icon class="backBtn" name="arrow-back-outline" (click)="backFunc()"></ion-icon>
+      <div class="logo-container">
+        <img src="./assets/capacash-logo.png" alt="Capacash Logo">
+      </div>
+    </div>
+
+    <div class="main-container">
+      <div class="content-container">
+        <ion-card>
+          <ion-card-header class="card-header">
+            <ion-avatar class="avatar-img">
+              <img alt="User Avatar" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+            </ion-avatar>
+            <div class="fixedDeets">
+              <p><strong>Dominic Rejano</strong></p>
+              <p>Emp#123</p>
+            </div>
+          </ion-card-header>
+
+          <ion-card-content>
+            <div class="info-field">
+              <p><strong>Company:</strong> Eclectus Technologies</p>
+              <p><strong>Company code:</strong> Capacash123455</p>
+              <p><strong>Email:</strong> drejano21&#64;gmail.com</p>
+            </div>
+
+            <hr>
+
+              <strong>Enter new password:</strong> 
+              <ion-input type="password" class="custom-input" placeholder="Enter new Password"></ion-input>
+              <strong>Re-enter new password:</strong> 
+              <ion-input type="password" class="custom-input" placeholder="Re-enter new Password"></ion-input>
+            
+
+            <div class="button-container">
+              <ion-button expand="block" shape="round" color="warning">Next</ion-button>
+            </div>
+          </ion-card-content>
+        </ion-card>
+      </div>
+    </div>
+  </div>
+</ion-app>

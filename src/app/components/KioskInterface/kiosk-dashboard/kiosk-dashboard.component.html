@@ -1,0 +1,135 @@
+<ion-app>
+  <!-- Side Menu -->
+  <ion-menu contentId="main-content">
+    <ion-header class="menuHdr">
+      <div class="HdrContainer">
+        <ion-avatar>
+          <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+        </ion-avatar>
+        <h2>Employee Username</h2>
+        <p>Employee ID</p>
+      </div>
+    </ion-header>
+
+    <ion-content class="ion-padding">
+      <ion-list>
+        <ion-item (click)="fabQRFunc()">
+          <ion-icon name="qr-code-outline"></ion-icon>
+          <ion-label class="contentLbl">Generate QR</ion-label>
+        </ion-item>
+        <ion-item (click)="fabTransactionsFunc()">
+          <ion-icon name="document-text-outline"></ion-icon>
+          <ion-label class="contentLbl">Transactions</ion-label>
+        </ion-item>
+        <ion-item (click)="fabSettingsFunc()">
+          <ion-icon name="settings-outline"></ion-icon>
+          <ion-label class="contentLbl">Settings</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+    <ion-footer class="menuFtr">
+      <ion-icon class="logoutBtn" name="log-out-outline" (click)="logOutFunc()"></ion-icon>
+    </ion-footer>
+  </ion-menu>
+
+  <!-- Header with Logo -->
+  <div class="mainContentContainer">
+    <div class="roundHdr">
+      <div class="logo-container">
+        <img src="./assets/capacash-logo.png">
+      </div>
+    </div>
+
+    <div class="content-container">
+      <div class="inner-container">
+        <ion-card class="balance-card">
+          <ion-row class="ion-align-items-center ion-justify-content-between">
+            <ion-col size="6">
+              <p class="balance-text">
+                <ion-icon name="eye-outline"></ion-icon>
+                BALANCE: ₱ *****
+              </p>
+            </ion-col>
+            <ion-col size="6" class="ion-text-end">
+              <ion-button fill="clear" size="small" (click)="fabQRFunc()">
+                <ion-icon name="scan-outline"></ion-icon>
+              </ion-button>
+              <ion-button fill="clear" size="small" (click)="fabTransactionsFunc()">
+                <ion-icon name="time-outline"></ion-icon>
+              </ion-button>
+              <ion-button fill="clear" size="small" (click)="fabSettingsFunc()">
+                <ion-icon name="settings-outline"></ion-icon>
+              </ion-button>
+            </ion-col>
+          </ion-row>
+        </ion-card>
+      </div>
+
+      <!-- Dropdowns -->
+      <div class="dropdown-container">
+        <div class="insidedropdown-container">
+          <ion-item>
+            <ion-label>Category:</ion-label>
+            <ion-select placeholder="Select Category" (ionChange)="onCategoryChange($event)">
+              <ion-select-option value="food">Food</ion-select-option>
+              <ion-select-option value="services">Services</ion-select-option>
+              <ion-select-option value="necessities">Necessities</ion-select-option>
+            </ion-select>
+          </ion-item>
+
+          <ion-item>
+            <ion-label>Canteen:</ion-label>
+            <ion-select placeholder="Select Store" (ionChange)="onCanteenChange($event)">
+              <ion-select-option value="canteenA-storeA">Canteen A, Store A</ion-select-option>
+              <ion-select-option value="canteenA-storeB">Canteen A, Store B</ion-select-option>
+              <ion-select-option value="canteenB-storeA">Canteen B, Store A</ion-select-option>
+              <ion-select-option value="canteenB-storeB">Canteen B, Store B</ion-select-option>
+            </ion-select>
+          </ion-item>
+
+          <div class="ion-padding ion-text-center">
+            <ion-button expand="block" shape="round" color="warning" (click)="getPaymentFunc()">
+              Get Payment
+            </ion-button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <!-- Main Page Content -->
+  <div class="ion-page" id="main-content">
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+    </ion-toolbar>
+
+    <!-- Tab Navigation -->
+    <ion-tabs>
+      <ion-tab-bar slot="bottom" class="custom-tab-bar">
+        <ion-tab-button tab="transactions" (click)="fabTransactionsFunc()">
+          <ion-icon name="document-text-outline"></ion-icon>
+          <ion-label>Transactions</ion-label>
+          <span class="notification-badge">1</span>
+        </ion-tab-button>
+
+        <ion-tab-button tab="settings" (click)="fabSettingsFunc()">
+          <ion-icon name="settings-outline"></ion-icon>
+          <ion-label>Settings</ion-label>
+        </ion-tab-button>
+      </ion-tab-bar>
+
+      <!-- QR Scanner Floating Button -->
+      <div class="fab-container">
+        <ion-fab vertical="bottom" horizontal="center">
+          <ion-fab-button (click)="generateQR()">
+            <ion-icon name="qr-code-outline"></ion-icon>
+          </ion-fab-button>
+        </ion-fab>
+      </div>
+    </ion-tabs>
+  </div>
+</ion-app>

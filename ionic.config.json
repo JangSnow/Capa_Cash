@@ -1,0 +1,7 @@
+{
+  "name": "Capa_Cash",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
