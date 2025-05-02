@@ -14,5 +14,6 @@ export const routes: Routes = [
   { path: 'qr-code', loadComponent: () => import('./components/Main/qr-code/qr-code.component').then((m) => m.QrGeneratorComponent) },
   { path: 'transactions', loadComponent: () => import('./components/Main/transactions/transactions.component').then((m) => m.TransactionsComponent)},
   { path: 'settings', loadComponent: ()=> import('./components/Main/settings/settings.component').then((m) => m.SettingsComponent)},
-  { path: 'kiosk-dashboard', loadComponent: () => import('./components/KioskInterface/kiosk-dashboard/kiosk-dashboard.component').then((m) => m.KioskDashboardComponent) }
+  { path: 'kiosk-dashboard', loadComponent: () => import('./components/KioskInterface/kiosk-dashboard/kiosk-dashboard.component').then((m) => m.KioskDashboardComponent) },
+  { path: 'input-amount', loadComponent: () => import('./components/KioskInterface/input-amount/input-amount.component').then((m) => m.InputAmountPage) }
 ];

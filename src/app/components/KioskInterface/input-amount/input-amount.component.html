@@ -1,0 +1,46 @@
+<div class="roundHdr">
+  <div class="logo-container">
+    <img src="./assets/capacash-logo.png" alt="CapaCash Logo">
+  </div>
+</div>
+
+<div class="content">
+  <div class="input-container">
+    <div class="merchant-info">
+      <div class="merchant-logo">
+        <img src="./assets/capacash-logo-small.png" alt="CapaCash Small Logo">
+      </div>
+      <div class="merchant-details">
+        <div class="merchant-name">CapaCash</div>
+        <div class="merchant-location">Food; Canteen A, Store A</div>
+      </div>
+      <ion-icon name="chevron-down-outline"></ion-icon>
+    </div>
+    <div class="amount-display">₱{{ amount }}</div>
+  </div>
+
+  <div class="number-pad">
+    <div class="number-row">
+      <button (click)="appendToAmount('1')">1</button>
+      <button (click)="appendToAmount('2')">2</button>
+      <button (click)="appendToAmount('3')">3</button>
+    </div>
+    <div class="number-row">
+      <button (click)="appendToAmount('4')">4</button>
+      <button (click)="appendToAmount('5')">5</button>
+      <button (click)="appendToAmount('6')">6</button>
+    </div>
+    <div class="number-row">
+      <button (click)="appendToAmount('7')">7</button>
+      <button (click)="appendToAmount('8')">8</button>
+      <button (click)="appendToAmount('9')">9</button>
+    </div>
+    <div class="number-row">
+      <button class="empty"></button>
+      <button (click)="appendToAmount('0')">0</button>
+      <button (click)="clearAmount()"><ion-icon name="backspace-outline"></ion-icon></button>
+    </div>
+  </div>
+
+  <ion-button expand="full" color="warning" (click)="continuePayment()">Continue</ion-button>
+</div>

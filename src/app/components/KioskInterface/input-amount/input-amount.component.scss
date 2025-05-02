@@ -1,0 +1,128 @@
+.roundHdr {
+    background-color: #fdcd48bd;
+    width: 100%;
+    height: 150px; /* Adjusted height */
+    border-radius: 0 0 50px 50px; /* Adjusted border-radius */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center vertically */
+  }
+  
+  /**.logo-container {
+    padding: 20px; Removed fixed padding 
+  }*/
+  
+  .logo-container img {
+    height: 80px; /* Adjusted logo size */
+    width: auto;
+  }
+  
+  .content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 150px); /* Adjust content height */
+  }
+  
+  .input-container {
+    background-color: #fff;
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .merchant-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .merchant-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+  }
+  
+  .merchant-logo img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  .merchant-details {
+    flex-grow: 1;
+  }
+  
+  .merchant-name {
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .merchant-location {
+    font-size: 12px;
+    color: #777;
+  }
+  
+  ion-icon[name="chevron-down-outline"] {
+    font-size: 20px;
+    color: #777;
+  }
+  
+  .amount-display {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .number-pad {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: auto; /* Push the continue button to the bottom */
+  }
+  
+  .number-row {
+    display: flex;
+  }
+  
+  .number-row button {
+    width: 80px;
+    height: 60px;
+    margin: 8px;
+    font-size: 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #f4f4f4;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .number-row button:active {
+    background-color: #e0e0e0;
+  }
+  
+  .number-row button.empty {
+    background-color: transparent;
+    border: none;
+  }
+  
+  .number-row button ion-icon {
+    font-size: 24px;
+  }
+  
+  ion-button[color="warning"] {
+    --background: #ffd700;
+    --background-activated: #e6c200;
+    --background-focused: #e6c200;
+    color: #333;
+    font-weight: bold;
+  }

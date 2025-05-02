@@ -16,7 +16,8 @@ export class KioskDashboardComponent  implements OnInit {
   getPaymentFunc() {
     console.log('Selected Category:', this.selectedCategory);
     console.log('Selected Canteen:', this.selectedCanteen);
-    // Add your logic here
+    
+    this.router.navigate(['./input-amount']);
   }
 
   constructor(private router: Router) { }

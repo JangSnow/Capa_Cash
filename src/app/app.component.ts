@@ -12,7 +12,8 @@ import {
   arrowBackOutline,
   filterOutline,
   searchOutline,
-  eyeOutline
+  eyeOutline,
+  backspaceOutline
 } from 'ionicons/icons';
 
 @Component({
@@ -34,7 +35,8 @@ export class AppComponent {
       'arrow-back-outline': arrowBackOutline,
       'filter-outline': filterOutline,
       'search-outline': searchOutline,
-      'eye-outline': eyeOutline
+      'eye-outline': eyeOutline,
+      'backspace-outline': backspaceOutline
     })
   }
 }
