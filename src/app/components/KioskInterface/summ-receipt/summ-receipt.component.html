@@ -1,0 +1,45 @@
+<div class="summary-container">
+  <div class="header">
+    <ion-button fill="clear" (click)="goBack()">
+      <ion-icon name="arrow-back-outline"></ion-icon>
+    </ion-button>
+    <h2 class="title">Summary Transaction</h2>
+    <ion-button fill="clear" (click)="showHelp()">
+      <ion-icon name="help-circle-outline"></ion-icon>
+    </ion-button>
+  </div>
+
+  <div class="merchant-details">
+    <div class="image-container">
+      <ion-icon name="image-outline"></ion-icon>
+    </div>
+    <h3 class="merchant-name">{{ merchantName }}</h3>
+    <p class="payment-date">{{ paymentDate }}</p>
+  </div>
+
+  <div class="amount-section">
+    <p class="currency">₱</p>
+    <h1 class="amount">{{ amount }}</h1>
+  </div>
+
+  <div class="fee-info">
+    <ion-icon name="information-circle-outline"></ion-icon>
+    <p>{{ paymentFeeMessage }}</p>
+  </div>
+
+  <div class="choose-payment">
+    <h3>Choose Payment</h3>
+    <div class="payment-method-card">
+      <div class="payment-logo">
+        <img src="./assets/capacash-logo-small.png" alt="CapaCash Logo">
+      </div>
+      <div class="payment-info">
+        <p class="method-name">{{ paymentMethod }}</p>
+        <p class="method-details">{{ paymentDetails }}</p>
+      </div>
+      <ion-icon name="chevron-down-outline"></ion-icon>
+    </div>
+  </div>
+
+  <ion-button expand="full" color="warning" (click)="proceedToPay()">Proceed to Pay</ion-button>
+</div>

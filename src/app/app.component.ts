@@ -13,7 +13,8 @@ import {
   filterOutline,
   searchOutline,
   eyeOutline,
-  backspaceOutline
+  backspaceOutline,
+  scanOutline
 } from 'ionicons/icons';
 
 @Component({
@@ -36,7 +37,8 @@ export class AppComponent {
       'filter-outline': filterOutline,
       'search-outline': searchOutline,
       'eye-outline': eyeOutline,
-      'backspace-outline': backspaceOutline
+      'backspace-outline': backspaceOutline,
+      'scan-outline': scanOutline
     })
   }
 }

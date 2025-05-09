@@ -1,0 +1,39 @@
+<div class="confirmation-container">
+  <div class="header">
+    <ion-button fill="clear" (click)="goBack()">
+      <ion-icon name="arrow-back-outline"></ion-icon>
+    </ion-button>
+    <h2 class="title">Confirm Password</h2>
+  </div>
+
+  <div class="instruction">
+    Please input your password before continuing payment
+  </div>
+
+  <div class="password-input">
+    <ion-label position="floating">Password</ion-label>
+    <ion-input
+      [type]="passwordVisible ? 'text' : 'password'"
+      [(ngModel)]="password"
+    ></ion-input>
+    <ion-icon
+      [name]="passwordVisible ? 'eye-outline' : 'eye-off-outline'"
+      (click)="togglePasswordVisibility()"
+      slot="end"
+    ></ion-icon>
+  </div>
+
+  <div class="password-requirements">
+    Must be at least 8 characters.
+  </div>
+
+  <ion-button
+    expand="full"
+    color="warning"
+    (click)="confirmPassword()"
+    [disabled]="password.length < 8"
+    class="confirmBtn"
+  >
+    Confirm Password
+  </ion-button>
+</div>

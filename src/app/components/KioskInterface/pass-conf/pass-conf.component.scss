@@ -1,0 +1,59 @@
+.confirmation-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    color: #333;
+  
+    ion-button {
+      color: #333;
+      margin-right: 15px;
+    }
+  
+    .title {
+      margin: 0;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+  }
+  
+  .instruction {
+    color: #555;
+    margin-bottom: 25px;
+  }
+  
+  .password-input {
+    margin-bottom: 20px;
+  
+    ion-input {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 10px;
+    }
+  
+    ion-icon {
+      color: #777;
+      cursor: pointer;
+    }
+  }
+  
+  .password-requirements {
+    color: #777;
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+  }
+  
+  ion-button[color="warning"] {
+    --background: #ffd700;
+    --background-activated: #e6c200;
+    --background-focused: #e6c200;
+    color: #333;
+    font-weight: bold;
+    margin-top: auto; /* Push to the bottom */
+  }

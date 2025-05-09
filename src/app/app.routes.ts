@@ -15,5 +15,7 @@ export const routes: Routes = [
   { path: 'transactions', loadComponent: () => import('./components/Main/transactions/transactions.component').then((m) => m.TransactionsComponent)},
   { path: 'settings', loadComponent: ()=> import('./components/Main/settings/settings.component').then((m) => m.SettingsComponent)},
   { path: 'kiosk-dashboard', loadComponent: () => import('./components/KioskInterface/kiosk-dashboard/kiosk-dashboard.component').then((m) => m.KioskDashboardComponent) },
-  { path: 'input-amount', loadComponent: () => import('./components/KioskInterface/input-amount/input-amount.component').then((m) => m.InputAmountPage) }
+  { path: 'input-amount', loadComponent: () => import('./components/KioskInterface/input-amount/input-amount.component').then((m) => m.InputAmountPage) },
+  { path: 'summ-receipt', loadComponent: () => import('./components/KioskInterface/summ-receipt/summ-receipt.component').then((m) => m.SummaryTransactionComponent) },
+  { path: 'pass-conf', loadComponent: () => import('./components/KioskInterface/pass-conf/pass-conf.component').then((m) => m.PasswordConfirmationComponent) }
 ];
